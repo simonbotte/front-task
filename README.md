@@ -9,7 +9,7 @@ Goal
 
 1. The user should only be able to enter digits.
 2. Groups of 3 digits should be separated by spaces ("1442" → "1 442").
-3. Starting at a width of 50 px, the input should adapt to the size of the entered value.
+3. Starting at a width of 72 px, the input should adapt to the size of the entered value.
 4. From the existing input, you need to create a component that you can reuse it in other parts of the
 project.
 

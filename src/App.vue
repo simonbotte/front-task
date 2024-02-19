@@ -5,12 +5,9 @@
       <div>
         <label for="hours-old">{{ student.name }} is</label>
         <div class="flex gap-2">
-          <input
-            v-model="student.age"
-            name="hours-old"
-            id="hours-old"
-            class="border-b-gray-300 border-b w-[50px]"
-            type="number"
+          <InputNumber
+            :value="student.age"
+            @update:input-number="student.age = $event"
           />
           <div class="text">hours old</div>
         </div>
@@ -21,6 +18,7 @@
 
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
+import InputNumber from './components/InputNumber.vue'
 
 const student = reactive<{
   name: string

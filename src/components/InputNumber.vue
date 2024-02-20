@@ -7,7 +7,6 @@ const props = defineProps<{
 const formattedValue = ref('')
 const rawValue = ref(props.value ? props.value.toString() : '')
 
-// Utilisez une fonction de surveillance pour réagir aux changements de la valeur des props
 watch(
   () => props.value,
   (newValue) => {
